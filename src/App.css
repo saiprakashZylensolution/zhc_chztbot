@@ -1,38 +1,83 @@
 .App {
+  position: relative;
+}
+
+.bot-icon {
+  background-color: #0563DD;
+  height: 80px;
+  width: 80px;
+  color: #fff;
+  border-radius: 15px;
   text-align: center;
+  padding-top: 8px;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bot-icon .faComments {
+  width: 60px;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chatBox {
+  height: 600px;
+  width: 500px;
+  position: fixed;
+  background-color: #f0f3f697;
+  border-radius: 15px;
+  border: 1px solid #0563DD;
+  box-shadow: 7px 9px 10px 1px #e4e4e4;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  border-bottom: 1px solid #0563DD;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header .xmark {
+  width: 25px;
+  height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-input{
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-bottom-right-radius:15px ;
+  border-bottom-left-radius:15px ;
+}
+
+input[type="text"]{
+    font-size:22px;
+}
+
+.textarea{
+  min-height: 457px;
+  padding: 10px 0;
+}
+
+.text-round{
+  min-width: 130px;
+  max-width: 296px;
+    border: 2px solid #1C71E0;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.text-round p{
+  margin: 10px;
+  font-size: 16px;
+}
+
+.outerDiv{
+  overflow-y: auto;
+  min-height: 457px;
+  max-height: 457px;
 }
